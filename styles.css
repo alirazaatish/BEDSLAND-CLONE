@@ -4,14 +4,15 @@ body{
     padding: 0;
     box-sizing: border-box;
     background-color: #f0f0f0;
-}
-
-/* Global Styles */
-body {
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
 }
+
+* {
+    box-sizing: border-box;
+}
+
 
 /* Navbar menu styling */
 #navbar_menu {
@@ -249,6 +250,7 @@ body {
     transition: box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
+
 #Offer_card_container:hover {
     box-shadow: 0 8px 16px rgba(0, 123, 255, 0.5); /* Adjusted to match the border color */
     border-color: #007bff;
@@ -384,4 +386,62 @@ body {
 .social-icons i {
     margin: 0 10px;
     font-size: 24px;
+}
+
+/* ################################################################################################################# */
+
+/* --------------------------------------------- Media Query -------------------------------------------------------- */
+
+/* ################################################################################################################## */
+
+@media (max-width: 768px) {
+    .your-class {
+        margin: 0; 
+    }
+
+    #top-contact-section{
+        display: none;
+    }
+
+    .search_box {
+        flex-direction: column; /* Stack input and icon vertically */
+        font-size: 14px; /* Smaller font size */
+        padding: 4px; /* Adjust padding */
+        margin-bottom: 7px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+    }
+
+    #search_btn {
+        padding: 5px 12px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Smaller font size */
+        margin-bottom: 2px; /* Add space between input and icon */
+    }
+
+    #fa-search {
+        font-size: 18px; /* Larger icon for better visibility */
+        padding: 0; /* Remove extra padding */
+    }
+
+    .Slider_container{
+        margin-top: 20px;
+    }
+
+    #Offer_card_container {
+        padding: 15px; /* Further reduced padding */
+    }
+
+    .premium_card {
+        margin-bottom: 15px; /* Space between stacked cards */
+        font-size: 14px; /* Even smaller font size for very small screens */
+        width: 100%; /* Full width for columns */
+        margin-bottom: 15px; /* Space between stacked columns */
+    }
+
+    #offer-logo-row{
+        flex-direction: column; /* Stack columns vertically */
+    }
+    
+    #Product-Container{
+        padding: 0px 20px 0px 20px;
+    }
 }

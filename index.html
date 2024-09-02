@@ -12,7 +12,7 @@
 </head>
 <body>
     <!---------------------------------- Header Contact Section-------------------------------->
-    <section>
+    <section id="top-contact-section">
         <div class="container-fluid" style="background-color: #F85606;">
             <div class="contact_details">
                 <ul>
@@ -72,8 +72,8 @@
     </section>
 
     <!--------------------------------------Background Image Container----------------------------------------->
-    <section>
-        <div class="container-fluid Slider_container" >
+    <section id="">
+        <div class="Slider_container" >
             <!-- Slider Background Img -->
              <img src="./assets/images web design/flash-sale-slider-2.jpg" class="img-fluid" alt="">
         </div>
@@ -82,7 +82,7 @@
     <!--------------------------------------Offer Container ------------------------------------------------->
     <section>
         <div class="container" id="Offer_card_container">
-            <div class="row">
+            <div class="row" id="offer-logo-row">
               <div class="col-md premium_card mt-3 align-items-center" >
                 <figure class="figure">
                     <img src="./assets/images web design/image-0.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
@@ -114,9 +114,9 @@
     <!----------------------------------- Shoping Card Section------------------------------------->
     <section>
         <div class="container card_title">
-            <h1><i class="fa-solid fa-shopping-cart"></i> SHOP BY CATEGORY</h1>
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><i class="fa-solid fa-shopping-cart"></i> SHOP BY CATEGORY</h1>
         </div>
-        <div class="container ">
+        <div class="container" id="Product-Container">
            <!------------------------------Row 1------------------------------->
             <div class="row" style="gap: 20px; margin-top: 2rem;">
             <!-- 1st Card -->
@@ -240,7 +240,8 @@
                             <div class="card-price">RS. 47,000</div>
                             <button type="button" class="card-button"><i class="fa-solid fa-shopping-cart"></i> Shop Now</button>
                            </div>
-            </div>
+           </div>
+        </div>
     </section>
     
     <!-- ------------------------------------------------------------------- -->
@@ -324,9 +325,10 @@
         <!-- Copyright Statement -->
         <div class="footer-section">
             <p>&copy; <span id="current-year"></span> BEDSLANDS. All rights reserved.</p>
-            <h4>Clone Developed By: Ali Raza Atish</h4>
+            <h4 style="color: blue;">Clone Developed By: <strong style="color: #F85606;">Ali Raza Atish</strong></h4>
         </div>
     </footer>
 
+    <script src="./app.js"></script>
 </body>
 </html>
